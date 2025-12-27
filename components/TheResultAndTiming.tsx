@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const TheResultAndTiming: React.FC = () => {
@@ -8,16 +9,16 @@ export const TheResultAndTiming: React.FC = () => {
         {/* BLOCK 1: THE RESULTS (Kết quả đạt được) */}
         <div className="space-y-12">
            <div className="text-center">
-              <span className="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-4 block">Sau 3 - 6 tháng</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-4 block">Sau 3 - 6 tháng nỗ lực</span>
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight">
-                Kết quả <span className="text-[#D4F077]">Đạt được</span>
+                Kết quả <span className="text-[#D4F077]">Có Thể Đạt được</span>
               </h2>
            </div>
 
            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Card 1: Income */}
               <div className="bg-[#111] border border-gray-800 rounded-3xl p-8 md:p-12 flex flex-col items-center text-center hover:border-primary/50 transition-colors duration-300 group">
-                 <div className="text-5xl md:text-6xl font-black text-[#D4F077] mb-2 group-hover:scale-110 transition-transform duration-300">10-200</div>
+                 <div className="text-5xl md:text-6xl font-black text-[#D4F077] mb-2 group-hover:scale-110 transition-transform duration-300">10-150</div>
                  <div className="text-lg font-bold text-gray-400 uppercase tracking-wide mb-4">Triệu / Tháng</div>
                  <p className="text-sm text-gray-500 font-medium">Dòng thu nhập thứ 2 bền vững</p>
               </div>
@@ -100,17 +101,25 @@ export const TheResultAndTiming: React.FC = () => {
            <div className="flex flex-wrap justify-center gap-4">
               {[
                 { label: "Affiliate: 10-30Tr", icon: "ph-link" },
+                { label: "Booking & tài trợ", icon: "ph-star" },
                 { label: "Bán Ebook / Course", icon: "ph-book-open" },
-                { label: "Coaching nhóm", icon: "ph-users-three" },
-                { label: "Bán App AI White-label", icon: "ph-robot" },
+                { label: "Bán Template & Prompt", icon: "ph-layout" },
+                { label: "Coaching nhóm kín", icon: "ph-users-three" },
+                { label: "Bán App AI White-label", icon: "ph-cpu" },
+                { label: "Membership thu phí", icon: "ph-crown" },
+                { label: "Dịch vụ AI Agency", icon: "ph-lightning" },
                 { label: "Faceless Content", icon: "ph-mask-happy" },
               ].map((item, idx) => (
-                 <div key={idx} className="flex items-center gap-3 px-6 py-4 rounded-xl bg-[#151515] border border-gray-800 hover:border-white/30 hover:bg-[#222] transition-all cursor-default group">
-                    <i className={`ph-fill ${item.icon} text-gray-500 group-hover:text-white transition-colors text-xl`}></i>
+                 <div key={idx} className="flex items-center gap-3 px-6 py-4 rounded-xl bg-[#151515] border border-gray-800 hover:border-primary/50 hover:bg-[#1a1a1a] transition-all cursor-default group shadow-lg">
+                    <i className={`ph-fill ${item.icon} text-gray-500 group-hover:text-primary transition-colors text-xl`}></i>
                     <span className="font-bold text-gray-300 group-hover:text-white transition-colors">{item.label}</span>
                  </div>
               ))}
            </div>
+           
+           <p className="text-gray-500 text-sm font-medium italic">
+             *Chỉ cần một kênh có lượng tiếp cận ổn định, tiền sẽ tự chảy về theo nhiều hướng khác nhau.
+           </p>
         </div>
 
       </div>

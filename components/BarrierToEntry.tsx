@@ -1,6 +1,11 @@
+
 import React from 'react';
 
-export const BarrierToEntry: React.FC = () => {
+interface BarrierToEntryProps {
+  onCTA?: () => void;
+}
+
+export const BarrierToEntry: React.FC<BarrierToEntryProps> = ({ onCTA }) => {
   return (
     <section className="w-full py-24 px-4 bg-[#050505] text-white overflow-hidden">
       <div className="max-w-6xl mx-auto space-y-20">
@@ -17,7 +22,7 @@ export const BarrierToEntry: React.FC = () => {
                    "Nhưng tôi không phải chuyên gia?"
                  </h2>
                  <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                   Tôi không có kiến thức sâu ở lĩnh vực nào cả, tôi hoàn toàn mới?
+                   Tôi không có kiến thức sâu ở lĩnh vực nào cả, tôi cũng chưa có kỹ năng gì, tôi hoàn toàn mới?
                  </p>
                  
                  <div className="flex items-center gap-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-300">
@@ -34,7 +39,7 @@ export const BarrierToEntry: React.FC = () => {
                  <div className="absolute inset-0 border-2 border-primary rounded-2xl blur-[2px] opacity-50"></div>
                  <div className="relative bg-[#0A0A0A] border border-primary rounded-2xl p-8 shadow-[0_0_30px_rgba(212,240,119,0.1)]">
                     <div className="text-xs font-bold text-primary uppercase tracking-widest mb-3">
-                       Lựa chọn mới
+                       Bạn có thể chọn
                     </div>
                     <h3 className="text-3xl font-black text-white uppercase leading-tight mb-4">
                        Xây kênh kiếm tiền <br/>
@@ -112,13 +117,17 @@ export const BarrierToEntry: React.FC = () => {
               
               <div className="mb-12 relative z-10">
                  <h4 className="text-3xl md:text-4xl font-black text-white leading-tight mb-2">
-                   Tại sao không dùng nó để <br/>
+                   Tại sao không dành thời gian đó để <br/>
+                   Xây kênh & thương hiệu <br/>
                    Xây tài sản số?
                  </h4>
               </div>
 
               <div className="relative z-10">
-                 <button className="bg-primary hover:bg-primary-hover text-black font-black text-lg px-8 py-4 rounded-lg shadow-[0_0_20px_rgba(212,240,119,0.4)] hover:shadow-[0_0_30px_rgba(212,240,119,0.6)] transform hover:scale-105 transition-all duration-300">
+                 <button 
+                    onClick={onCTA}
+                    className="bg-primary hover:bg-primary-hover text-black font-black text-lg px-8 py-4 rounded-lg shadow-[0_0_20px_rgba(212,240,119,0.4)] hover:shadow-[0_0_30px_rgba(212,240,119,0.6)] transform hover:scale-105 transition-all duration-300"
+                 >
                    Tôi muốn bắt đầu
                  </button>
               </div>

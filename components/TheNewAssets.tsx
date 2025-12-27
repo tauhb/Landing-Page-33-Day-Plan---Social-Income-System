@@ -107,7 +107,6 @@ export const TheNewAssets: React.FC = () => {
                     <h3 className="text-2xl md:text-3xl font-black text-white uppercase">
                        Khai thác <span className="text-yellow-500">Dòng tiền</span>
                     </h3>
-                    <p className="text-gray-400 text-sm">Monetization Enabled</p>
                  </div>
                  
                  <i className="ph-bold ph-arrow-right text-3xl text-yellow-600 hidden md:block"></i>

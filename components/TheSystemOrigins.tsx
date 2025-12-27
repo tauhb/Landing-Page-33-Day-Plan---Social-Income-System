@@ -67,8 +67,8 @@ export const TheSystemOrigins: React.FC = () => {
               </div>
               
               <h3 className="text-3xl md:text-4xl font-black text-white uppercase mb-6 leading-tight">
-                Từ trải nghiệm cá nhân <br/>
-                <span className="text-gray-500">➔ Quy trình đội ngũ</span>
+                Từ thử nghiệm cho riêng cá nhân tôi <br/>
+                <span className="text-gray-500">➔ Giờ tôi có quy trình cho đội ngũ</span>
               </h3>
               
               <p className="text-lg text-gray-400 mb-10 leading-relaxed">
@@ -90,7 +90,7 @@ export const TheSystemOrigins: React.FC = () => {
                  {/* Metric 2 */}
                  <div className="group flex items-center gap-5 p-5 bg-[#111] rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-colors">
                     <div className="w-14 h-14 rounded-xl bg-purple-900/20 text-purple-500 flex items-center justify-center text-2xl font-black border border-purple-900/30">
-                       14M+
+                       141M+
                     </div>
                     <div>
                        <div className="font-bold text-white text-lg group-hover:text-purple-400 transition-colors">Lượt xem tự nhiên</div>
@@ -121,14 +121,14 @@ export const TheSystemOrigins: React.FC = () => {
                  {/* Item 1: Viral Video */}
                  <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 relative group transform translate-y-8 hover:-translate-y-2 transition-transform duration-500 shadow-xl">
                     <div className="aspect-[9/16] relative">
-                        <img src="https://picsum.photos/400/700?random=50" alt="Viral Video 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                        <img src="https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f4c74e889d326c682e7c9.png" alt="Viral Video 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                         <div className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1 animate-pulse">
                             <i className="ph-fill ph-fire"></i> THỊNH HÀNH
                         </div>
                         <div className="absolute bottom-4 left-4">
-                            <div className="text-2xl font-black text-white">1.2M</div>
-                            <div className="text-xs text-gray-300 font-mono uppercase">Lượt xem • 2 Ngày trước</div>
+                            <div className="text-2xl font-black text-white">3 kênh mới</div>
+                            <div className="text-xs text-gray-300 font-mono uppercase">70M+ Lượt xem • tháng qua</div>
                         </div>
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                              <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
@@ -141,7 +141,7 @@ export const TheSystemOrigins: React.FC = () => {
                  {/* Item 2: High Engagement Post */}
                  <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 relative group hover:-translate-y-2 transition-transform duration-500 shadow-xl">
                     <div className="aspect-[4/5] relative">
-                        <img src="https://picsum.photos/400/500?random=51" alt="Viral Post 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                        <img src="https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f4d1073a5e01a193ca658.png" alt="Viral Post 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                         <div className="absolute bottom-4 left-4">
                             <div className="text-2xl font-black text-white">8.5K</div>
@@ -157,13 +157,13 @@ export const TheSystemOrigins: React.FC = () => {
                  {/* Item 3: Carousel */}
                  <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 relative group transform translate-y-4 hover:-translate-y-2 transition-transform duration-500 shadow-xl">
                     <div className="aspect-square relative">
-                        <img src="https://picsum.photos/400/400?random=52" alt="Carousel" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                        <img src="https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f24cc6caf490e2d690b72.png" alt="Carousel" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
                         <div className="absolute top-3 right-3 bg-black/50 backdrop-blur text-white text-xs font-bold px-2 py-1 rounded border border-white/20">
                             1/10
                         </div>
                         <div className="absolute bottom-4 left-4">
-                            <div className="text-2xl font-black text-white">450K</div>
-                            <div className="text-xs text-gray-300 font-mono uppercase">Tiếp cận</div>
+                            <div className="text-2xl font-black text-white">3.6K</div>
+                            <div className="text-xs text-gray-300 font-mono uppercase">Leads trong 14 ngày</div>
                         </div>
                     </div>
                  </div>
@@ -174,10 +174,10 @@ export const TheSystemOrigins: React.FC = () => {
                         <div className="w-10 h-10 rounded-full bg-green-900/30 text-green-500 flex items-center justify-center border border-green-500/20">
                             <i className="ph-fill ph-money text-xl"></i>
                         </div>
-                        <div className="text-xs font-bold text-gray-400 uppercase">Bảng hoa hồng</div>
+                        <div className="text-xs font-bold text-gray-400 uppercase">Tổng thống kê</div>
                     </div>
-                    <div className="text-3xl font-black text-white mb-1">+ 15.2M</div>
-                    <div className="text-sm text-green-500 font-bold mb-4">▲ 124% Tháng này</div>
+                    <div className="text-3xl font-black text-white mb-1">07 Kênh với 141M views</div>
+                    <div className="text-sm text-green-500 font-bold mb-4">▲ 324% Tháng này</div>
                     <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden">
                         <div className="w-[70%] h-full bg-green-500 rounded-full"></div>
                     </div>

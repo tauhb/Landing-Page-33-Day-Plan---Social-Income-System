@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Hero } from './components/Hero';
 import { TransformationMap } from './components/TransformationMap';
@@ -21,7 +22,6 @@ import { TheMarketParadox } from './components/TheMarketParadox';
 import { TheBlueprint } from './components/TheBlueprint';
 import { TheEpiphany } from './components/TheEpiphany';
 import { TheNewReality } from './components/TheNewReality';
-import { RealCaseStudies } from './components/RealCaseStudies';
 import { BarrierToEntry } from './components/BarrierToEntry';
 import { TheResultAndTiming } from './components/TheResultAndTiming';
 import { TheOneChannel } from './components/TheOneChannel';
@@ -34,6 +34,7 @@ import { IntegratedSystemFlow } from './components/IntegratedSystemFlow';
 import { TheDiagnosis } from './components/TheDiagnosis';
 import { TheCrossroads } from './components/TheCrossroads';
 import { TheOfferReveal } from './components/TheOfferReveal';
+import { TargetAudience } from './components/TargetAudience';
 import { TheSoloTrap } from './components/TheSoloTrap';
 import { TheProgramPositioning } from './components/TheProgramPositioning';
 import { TheDay33Vision } from './components/TheDay33Vision';
@@ -46,9 +47,11 @@ import { TheFinalComparison } from './components/TheFinalComparison';
 import { TheFinalCall } from './components/TheFinalCall';
 import { Footer } from './components/Footer';
 import { TheNewAssets } from './components/TheNewAssets';
+import { RegistrationPopup } from './components/RegistrationPopup';
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
@@ -63,6 +66,9 @@ const App: React.FC = () => {
     setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   };
 
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
   const scrollTo = (id: string) => {
     setIsMenuOpen(false);
     const element = document.getElementById(id);
@@ -76,12 +82,12 @@ const App: React.FC = () => {
     { label: 'Nghịch lý thị trường', id: 'reality' },
     { label: 'Cỗ máy 100X', id: 'system' },
     { label: 'Lộ trình 33 Ngày', id: 'journey' },
-    { label: 'Kết quả thực tế', id: 'results' },
-    { label: 'Phụ phí tham gia', id: 'pricing' },
+    { label: 'Đăng ký tham gia', id: 'pricing' },
   ];
 
   return (
     <div className="min-h-screen relative overflow-x-hidden bg-background-light dark:bg-background-dark text-gray-900 dark:text-white transition-colors duration-300">
+      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-[100] w-full px-4 md:px-8 py-4 flex justify-between items-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
         
@@ -104,7 +110,7 @@ const App: React.FC = () => {
         {/* CTA, Theme Toggle and Menu Button - Always Visible */}
         <div className="flex items-center gap-2 md:gap-4">
           <button 
-            onClick={() => scrollTo('pricing')}
+            onClick={openPopup}
             className="px-3 md:px-4 py-2 bg-primary hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black font-black text-[10px] md:text-xs uppercase tracking-widest rounded transition-all duration-300 shadow-sm border border-black/5"
           >
             GHI DANH MIỄN PHÍ
@@ -168,13 +174,13 @@ const App: React.FC = () => {
              <div className="flex flex-col gap-4">
                 <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Theo dõi chúng tôi</span>
                 <div className="flex gap-4">
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
+                  <a href="https://www.facebook.com/tauhb/" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
                     <i className="ph ph-facebook-logo text-xl"></i>
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
-                    <i className="ph ph-instagram-logo text-xl"></i>
+                  <a href="https://www.youtube.com/@hoangbatauofficial/" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
+                    <i className="ph ph-youtube-logo text-xl"></i>
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
+                  <a href="https://www.tiktok.com/@hoangbatau" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:border-primary hover:text-black transition-all">
                     <i className="ph ph-tiktok-logo text-xl"></i>
                   </a>
                 </div>
@@ -184,7 +190,7 @@ const App: React.FC = () => {
       </div>
 
       <main className="relative z-10 w-full pt-16">
-        <section id="hero"><Hero /></section>
+        <section id="hero"><Hero onCTA={openPopup} /></section>
         <TransformationMap />
         <Instructor />
         <section id="reality"><MarketReality /></section>
@@ -209,9 +215,8 @@ const App: React.FC = () => {
           <TheEpiphany />
           <TheNewAssets />
         </div>
-        <section id="results"><RealCaseStudies /></section>
-        <BarrierToEntry />
-        <TheResultAndTiming />
+        <BarrierToEntry onCTA={openPopup} />
+        <section id="results"><TheResultAndTiming /></section>
         <TheOneChannel />
         <FacebookStrategy />
         <TheStoryPivot />
@@ -221,20 +226,24 @@ const App: React.FC = () => {
         <IntegratedSystemFlow />
         <TheDiagnosis />
         <TheCrossroads />
-        <TheOfferReveal />
+        <section id="reveal"><TheOfferReveal /></section>
+        <TargetAudience />
         <TheSoloTrap />
         <TheProgramPositioning />
         <TheDay33Vision />
         <TheValueIntro />
         <section id="journey"><TheDeliverables /></section>
-        <section id="pricing"><TheTotalValue /></section>
+        <section id="pricing"><TheTotalValue onCTA={openPopup} /></section>
         <ThePriceJustification />
         <TheLimitedAccess />
-        <TheFinalComparison />
-        <TheFinalCall />
+        <TheFinalComparison onCTA={openPopup} />
+        <TheFinalCall onCTA={openPopup} />
       </main>
 
       <Footer />
+
+      {/* Global Registration Popup */}
+      <RegistrationPopup isOpen={isPopupOpen} onClose={closePopup} />
       
       <style>{`
         .ease-expo {

@@ -16,7 +16,7 @@ export const TheVision: React.FC = () => {
              141,842,000
            </h2>
            <h3 className="text-2xl md:text-5xl font-black uppercase text-gray-500 mb-8 tracking-tighter">
-             LƯỢT TIẾP CẬN / 28 NGÀY
+             TỔNG LƯỢT XEM / 28 NGÀY
            </h3>
            <div className="flex flex-wrap justify-center gap-3">
               {["Không lộ mặt", "0đ Quảng cáo", "Vận hành tự động"].map((tag, i) => (
@@ -95,21 +95,22 @@ export const TheVision: React.FC = () => {
             <div className="relative z-10 flex flex-col h-full">
               <div className="mb-10">
                 <span className="inline-block px-3 py-1 rounded bg-primary/10 border border-primary/20 text-primary font-mono text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-                  Logic lãi kép tài sản
+                  Logic lãi kép tăng tưởng
                 </span>
                 <h3 className="text-4xl md:text-6xl font-black text-white leading-none tracking-tighter uppercase mb-6 italic">
-                  Tài sản số <br/>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-500">Lãi kép liên tục</span>
+                  Nội dung chất <br/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-500">Liên tục tăng</span>
                 </h3>
                 <p className="text-gray-400 text-sm max-w-md leading-relaxed mb-10">
                   Một bài đăng không làm nên sự nghiệp. Nhưng <span className="text-white font-bold">hệ thống 142+ bài đăng</span> làm việc 24/7 thay bạn sẽ tạo ra kết quả không thể đảo ngược.
+                  Cần phải có hệ thống, chứ nếu thực hiện như cách cũ sẽ không thể nào đạt được.
                 </p>
               </div>
 
               {/* Mini Dashboard Metrics */}
               <div className="grid grid-cols-2 gap-4 mt-auto">
                  <div className="bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white/10 transition-colors">
-                    <div className="text-[10px] font-mono text-gray-500 uppercase mb-2">Số lượng tài sản</div>
+                    <div className="text-[10px] font-mono text-gray-500 uppercase mb-2">Số lượng</div>
                     <div className="text-3xl font-black text-white font-mono leading-none">142<span className="text-primary">.</span></div>
                     <div className="text-[10px] text-green-500 mt-2 font-bold">+12 Thêm mới hôm nay</div>
                  </div>
@@ -136,8 +137,8 @@ export const TheVision: React.FC = () => {
         <div className="text-center max-w-4xl mx-auto">
            <div className="w-16 h-px bg-gray-800 mx-auto mb-10"></div>
            <h3 className="text-xl md:text-2xl font-medium text-gray-400 leading-relaxed italic">
-             "Khi thời gian sản xuất giảm và lượt tiếp cận tăng vọt, <br className="hidden md:block"/> 
-             bạn không chỉ đang kiếm tiền, bạn đang <span className="text-white font-bold not-italic border-b-2 border-primary/50">Cài đặt cỗ máy tự do</span> cho chính mình."
+             "Khi số lượng nội dung chất lượng tăng lên và lượt tiếp cận tăng vọt, <br className="hidden md:block"/> 
+             bạn không chỉ đang kiếm tiền, bạn đang <span className="text-white font-bold not-italic border-b-2 border-primary/50">Cài đặt cỗ máy tự do</span>."
            </h3>
         </div>
 

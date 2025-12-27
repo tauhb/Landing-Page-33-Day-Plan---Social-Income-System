@@ -1,8 +1,13 @@
+
 import React from 'react';
 
-export const TheTotalValue: React.FC = () => {
+interface TheTotalValueProps {
+  onCTA?: () => void;
+}
+
+export const TheTotalValue: React.FC<TheTotalValueProps> = ({ onCTA }) => {
   const items = [
-    { name: "Hành Trình 33 Ngày Đồng Hành", value: "41.000.000đ", highlight: true },
+    { name: "Hành Trình 33 Ngày Đồng Hành", value: "45.000.000đ", highlight: true },
     { name: "5 Buổi Zoom Đào Tạo Trực Tiếp", value: "7.000.000đ" },
     { name: "28 Buổi Zoom Đồng Hành (1H/Buổi)", value: "15.000.000đ" },
     { name: "100 Ngày Hỗ Trợ 1:1", value: "5.000.000đ" },
@@ -39,13 +44,10 @@ export const TheTotalValue: React.FC = () => {
            
            <div className="border-t-4 border-black pt-6 mb-8">
               <div className="flex justify-between items-end mb-2">
-                 <span className="font-bold text-lg">TỔNG GIÁ TRỊ THỰC:</span>
-                 <span className="font-black text-2xl md:text-3xl">41.000.000 VNĐ</span>
+                 <span className="font-bold text-lg">TỔNG GIÁ TRỊ:</span>
+                 <span className="font-black text-2xl md:text-3xl">45.000.000 VNĐ</span>
               </div>
-              <div className="flex justify-between items-end text-gray-400">
-                 <span className="font-medium">Giá thị trường:</span>
-                 <span className="line-through decoration-2 decoration-red-500">45.000.000 VNĐ</span>
-              </div>
+             
            </div>
 
            <div className="bg-primary/20 p-6 text-center border-2 border-primary border-dashed rounded relative overflow-hidden">
@@ -73,7 +75,10 @@ export const TheTotalValue: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center px-4">
-           <button className="w-full md:w-auto bg-primary hover:bg-primary-hover text-black font-black text-xl md:text-2xl px-8 md:px-12 py-5 rounded-full shadow-[0_0_40px_rgba(212,240,119,0.5)] transform hover:scale-105 transition-transform duration-300 animate-pulse uppercase">
+           <button 
+            onClick={onCTA}
+            className="w-full md:w-auto bg-primary hover:bg-primary-hover text-black font-black text-xl md:text-2xl px-8 md:px-12 py-5 rounded-full shadow-[0_0_40px_rgba(212,240,119,0.5)] transform hover:scale-105 transition-transform duration-300 animate-pulse uppercase"
+           >
               ĐĂNG KÝ GHI DANH MIỄN PHÍ
            </button>
            

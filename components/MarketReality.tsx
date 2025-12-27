@@ -22,9 +22,9 @@ export const MarketReality: React.FC = () => {
           </h2>
           
           <h1 className="relative text-5xl md:text-8xl font-black tracking-normal uppercase leading-[1.15] text-white pt-4 py-2">
-            <span className="relative z-10">KHÔNG PHẢI BÌNH THƯỜNG</span>
+            <span className="relative z-10">ĐẦY BIẾN ĐỘNG</span>
             {/* Glitch Shadow */}
-            <span className="absolute top-4 left-0 -ml-1 text-red-600 opacity-50 z-0 animate-pulse">KHÔNG PHẢI BÌNH THƯỜNG</span>
+            <span className="absolute top-4 left-0 -ml-1 text-red-600 opacity-50 z-0 animate-pulse">ĐẦY BIẾN ĐỘNG</span>
           </h1>
         </div>
         
@@ -40,7 +40,7 @@ export const MarketReality: React.FC = () => {
                   <span className="font-mono font-bold">01</span>
                </div>
                <span className="text-2xl md:text-3xl font-black text-gray-200 uppercase tracking-tight leading-tight group-hover:text-white transition-colors">
-                  Biến động <br/>liên tục
+                  Kinh tế <br/>biến động
                </span>
                <div className="mt-4 h-1 w-12 bg-gray-800 group-hover:bg-red-500 transition-colors"></div>
             </div>
@@ -102,13 +102,13 @@ export const MarketReality: React.FC = () => {
           <div className="relative bg-[#111] bg-opacity-80 backdrop-blur-md border border-white/10 p-8 md:p-12">
             <div className="flex flex-col items-center gap-6">
               <p className="text-lg md:text-xl text-gray-400 font-medium font-mono text-center">
-                > Tin_Nhắn_Hệ_Thống: "Đây không phải workshop tạo động lực."
+                > Tin_Nhắn_Hệ_Thống: "Chương trình này không truyền động lực."
               </p>
               
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-xl md:text-3xl font-black text-white text-center leading-tight">
                 <i className="ph-fill ph-cursor-click text-primary animate-bounce"></i>
                 <span className="bg-white/5 border border-white/10 px-6 py-2 rounded-lg">
-                  Đây là workshop để <span className="text-primary underline decoration-4 underline-offset-4 decoration-primary/30">không chọn sai đường</span>.
+                  Nó được tạo ra để <span className="text-primary underline decoration-4 underline-offset-4 decoration-primary/30">hướng dẫn cách làm đúng</span>.
                 </span>
               </div>
             </div>

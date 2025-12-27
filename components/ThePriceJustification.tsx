@@ -21,7 +21,7 @@ export const ThePriceJustification: React.FC = () => {
                  <li className="flex items-center gap-2"><i className="ph-fill ph-check text-green-500"></i> Không cần giỏi viết, không cần quay video</li>
               </ul>
               <p className="font-bold text-lg md:text-xl text-gray-900 dark:text-white italic">
-                👉 Thì nó có xứng đáng với giá trị <span className="text-primary-hover not-italic decoration-2 underline">41.000.000 VNĐ</span> không?
+                👉 Thì nó có xứng đáng với giá trị <span className="text-primary-hover not-italic decoration-2 underline">45.000.000 VNĐ</span> không?
               </p>
            </div>
 
@@ -92,7 +92,7 @@ export const ThePriceJustification: React.FC = () => {
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-white to-primary"></div>
            
            <p className="text-gray-400 uppercase tracking-widest mb-4 font-bold">Giá trị thực tế</p>
-           <h2 className="text-4xl md:text-5xl font-black mb-8">41.000.000 VNĐ</h2>
+           <h2 className="text-4xl md:text-5xl font-black mb-8">45.000.000 VNĐ</h2>
            
            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
              Nhưng bởi vì bạn đã ở lại đến cuối. Bạn đã học cùng tôi. Và tôi muốn giúp được càng nhiều người càng tốt.

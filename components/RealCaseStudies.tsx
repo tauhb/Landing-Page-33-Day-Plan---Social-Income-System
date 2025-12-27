@@ -43,7 +43,7 @@ export const RealCaseStudies: React.FC = () => {
             <span className="text-gray-500">Mà là người thật</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Dưới đây không phải ví dụ truyền cảm hứng, mà là những người thật – lĩnh vực thật – kết quả thật.
+            Khi bạn có thương hiệu cá nhân, hoặc xây kênh, bạn hoàn toàn có thể đạt kết quả như vậy...
           </p>
         </div>
 

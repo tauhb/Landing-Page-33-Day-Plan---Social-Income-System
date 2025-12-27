@@ -1,6 +1,11 @@
+
 import React from 'react';
 
-export const TheFinalComparison: React.FC = () => {
+interface TheFinalComparisonProps {
+  onCTA?: () => void;
+}
+
+export const TheFinalComparison: React.FC<TheFinalComparisonProps> = ({ onCTA }) => {
   const deliverables = [
     { title: "Hành trình 33 ngày", sub: "Đồng hành Xây kênh & Kiếm tiền" },
     { title: "5 Buổi Đào tạo", sub: "Trực tiếp qua Zoom" },
@@ -104,7 +109,10 @@ export const TheFinalComparison: React.FC = () => {
 
                  {/* Updated CTA Button */}
                  <div className="relative z-10">
-                    <button className="w-full md:w-auto bg-primary hover:bg-white text-black px-8 py-4 rounded-2xl shadow-[0_0_40px_rgba(212,240,119,0.4)] transform hover:scale-[1.02] transition-all duration-300 group flex flex-col items-center justify-center gap-1 mx-auto">
+                    <button 
+                      onClick={onCTA}
+                      className="w-full md:w-auto bg-primary hover:bg-white text-black px-8 py-4 rounded-2xl shadow-[0_0_40px_rgba(212,240,119,0.4)] transform hover:scale-[1.02] transition-all duration-300 group flex flex-col items-center justify-center gap-1 mx-auto"
+                    >
                        <span className="text-xl md:text-2xl font-black uppercase flex items-center gap-2">
                           ĐĂNG KÝ GHI DANH MIỄN PHÍ <i className="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
                        </span>

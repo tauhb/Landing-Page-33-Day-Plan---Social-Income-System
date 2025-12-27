@@ -31,8 +31,8 @@ export const TheBlueprint: React.FC = () => {
            </p>
            <div className="p-6 bg-white dark:bg-surface-dark border-l-4 border-primary rounded-r-xl shadow-lg">
              <p className="text-xl md:text-2xl font-serif italic text-gray-600 dark:text-gray-300">
-               "Họ không bán hàng ngay lập tức. Họ không chạy theo trend nhất thời.<br/>
-               Họ đều âm thầm xây dựng theo đúng <span className="text-gray-900 dark:text-white font-bold not-italic">01 CÔNG THỨC DUY NHẤT</span>..."
+               "Họ không bán hàng ngay lập tức. Họ không chạy theo trend.<br/>
+               Họ đều âm thầm làm đúng <span className="text-gray-900 dark:text-white font-bold not-italic">01 CÔNG THỨC DUY NHẤT</span>..."
              </p>
            </div>
            

@@ -1,6 +1,11 @@
+
 import React from 'react';
 
-export const TheFinalCall: React.FC = () => {
+interface TheFinalCallProps {
+  onCTA?: () => void;
+}
+
+export const TheFinalCall: React.FC<TheFinalCallProps> = ({ onCTA }) => {
   return (
     <section className="w-full py-24 px-4 bg-[#08090C] text-white overflow-hidden relative">
       {/* Background Effect */}
@@ -73,13 +78,16 @@ export const TheFinalCall: React.FC = () => {
            </p>
 
            <div className="bg-white/5 border border-white/10 p-2 md:p-4 rounded-full inline-block">
-              <button className="bg-primary hover:bg-primary-hover text-black font-black text-xl md:text-3xl px-12 py-6 rounded-full shadow-[0_0_50px_rgba(212,240,119,0.6)] transform hover:scale-105 transition-all duration-300 animate-pulse uppercase flex items-center gap-4 mx-auto">
+              <button 
+                onClick={onCTA}
+                className="bg-primary hover:bg-primary-hover text-black font-black text-xl md:text-3xl px-12 py-6 rounded-full shadow-[0_0_50px_rgba(212,240,119,0.6)] transform hover:scale-105 transition-all duration-300 animate-pulse uppercase flex items-center gap-4 mx-auto"
+              >
                  <span>👉 GIỮ CHỖ THAM GIA NGAY</span>
               </button>
            </div>
            
            <p className="mt-6 text-gray-500 text-sm font-bold uppercase tracking-widest">
-             Số lượng giới hạn – Đóng đăng ký khi đủ 20 người
+             Số lượng giới hạn – Đóng đăng ký khi đủ 20 người cho lần mở cửa ghi danh này.
            </p>
         </div>
 

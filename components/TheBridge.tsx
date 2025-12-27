@@ -58,7 +58,7 @@ export const TheBridge: React.FC = () => {
 
              <blockquote className="border-l-4 border-red-600 pl-6 my-8">
                 <p className="text-xl md:text-2xl text-gray-300 font-medium leading-relaxed">
-                  "Là bạn đang gián tiếp đẩy bản thân và gia đình vào những tình huống <span className="text-white font-bold bg-red-900/30 px-1">rủi ro đầy bị động</span>."
+                  "Là bạn đang gián tiếp đẩy bản thân và gia đình vào những <span className="text-white font-bold bg-red-900/30 px-1">rủi ro đầy bị động</span>."
                 </p>
              </blockquote>
 

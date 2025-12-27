@@ -37,10 +37,10 @@ export const TheLimitedAccess: React.FC = () => {
               </div>
               <h4 className="text-2xl font-black text-red-600 dark:text-red-500 uppercase mb-2">Giới hạn 20 người</h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                Để đảm bảo: Soi bài thật - Sửa lỗi thật - Đồng hành thật.
+                Cho lần mở cửa ghi danh đăng ký này.
               </p>
               <div className="inline-block px-3 py-1 bg-red-200 dark:bg-red-900/50 rounded text-red-700 dark:text-red-300 text-xs font-bold uppercase">
-                 Không mở đại trà
+                 Chúng tôi cũng không thường xuyên mở cửa đăng ký. Hãy nhanh tay.
               </div>
            </div>
 
@@ -49,9 +49,9 @@ export const TheLimitedAccess: React.FC = () => {
               <div className="w-16 h-16 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-500 text-3xl mb-4">
                  <i className="ph-fill ph-clock-countdown"></i>
               </div>
-              <h4 className="text-2xl font-black text-orange-600 dark:text-orange-500 uppercase mb-2">Trước 23h30 Hôm nay</h4>
+              <h4 className="text-2xl font-black text-orange-600 dark:text-orange-500 uppercase mb-2">Điền Thông Tin Trước 23h30 Hôm Nay</h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                Sau thời điểm này chương trình sẽ đóng.
+                Sau thời điểm này có thể cửa đăng ký ghi danh chương trình sẽ đóng.
               </p>
               <div className="inline-block px-3 py-1 bg-orange-200 dark:bg-orange-900/50 rounded text-orange-700 dark:text-orange-300 text-xs font-bold uppercase">
                  Không nhận thêm

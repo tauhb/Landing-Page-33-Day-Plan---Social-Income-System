@@ -11,7 +11,7 @@ export const PainPoints: React.FC = () => {
         
         {/* Squeezed Headline */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-600 uppercase leading-[0.85] tracking-tighter mb-4">
+          <h2 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-600 uppercase leading-[1.1] tracking-tighter mb-4">
             CHÚNG TA SẼ <br/>
             <span className="text-red-600 drop-shadow-[0_0_20px_rgba(220,38,38,0.5)]">VẤT VẢ RA SAO</span>
           </h2>

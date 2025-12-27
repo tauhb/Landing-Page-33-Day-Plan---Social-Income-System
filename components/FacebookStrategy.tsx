@@ -105,11 +105,11 @@ export const FacebookStrategy: React.FC = () => {
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                      {[
-                        { title: "Tiếp cận tự nhiên", img: "https://picsum.photos/400/600?random=100" },
-                        { title: "Tương tác thật", img: "https://picsum.photos/400/600?random=101" },
-                        { title: "Viral Text", img: "https://picsum.photos/400/600?random=102" },
-                        { title: "Đơn hàng về", img: "https://picsum.photos/400/600?random=103" },
-                        { title: "Affiliate Income", img: "https://picsum.photos/400/600?random=104" },
+                        { title: "Bài viết nhiều view hơn video", img: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f5486835a5845ebc448af.png" },
+                        { title: "Bài viết hiệu quả hơn", img: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f5486dda192ab6882b1f2.png" },
+                        { title: "Dễ tạo bài viết hơn video", img: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f5486dda1924d6082b1f3.png" },
+                        { title: "Bài viết dễ được share hơn video", img: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f5486ee10474e77d3203d.png" },
+                        { title: "Và cũng dễ kéo tương tác", img: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f548673a5e01e893d44e2.png" },
                      ].map((item, idx) => (
                         <div key={idx} className="flex-shrink-0 w-[260px] md:w-[300px] snap-center">
                             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden group border border-white/10 hover:border-white/30 transition-colors">
@@ -129,8 +129,8 @@ export const FacebookStrategy: React.FC = () => {
             {/* Footer Text */}
             <div className="mt-8 text-center">
                 <p className="text-xl text-gray-400 font-medium">
-                    Thuật toán đang ưu tiên nội dung có chiều sâu.<br/>
-                    <span className="text-white font-bold">Đây là cơ hội của bạn.</span>
+                    Thuật toán đang ưu tiên nội dung mà không phân biệt là bài viết hay video.<br/>
+                    <span className="text-white font-bold">Đây là cơ hội lớn của bạn.</span>
                 </p>
             </div>
 

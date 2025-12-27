@@ -32,7 +32,7 @@ export const TheComeback: React.FC = () => {
       subLabel: "17M Views",
       date: "Tháng 1",
       color: "#60A5FA", // Blue
-      image: "https://picsum.photos/400/300?random=1",
+      image: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f24ccafc54375e3b43e05.png",
       stats: "Tiếp cận tự nhiên cao"
     },
     { 
@@ -42,7 +42,7 @@ export const TheComeback: React.FC = () => {
       subLabel: "Bị Hạn Chế",
       date: "Tháng 2",
       color: "#EF4444", // Red
-      image: "https://picsum.photos/400/300?random=2",
+      image: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f467edda1922395817175.png",
       stats: "Mất traffic, doanh thu = 0"
     },
     { 
@@ -52,8 +52,8 @@ export const TheComeback: React.FC = () => {
       subLabel: "System 100X",
       date: "Giữa T2",
       color: "#FBBF24", // Yellow
-      image: "https://picsum.photos/400/300?random=3",
-      stats: "Triển khai tự động hoá"
+      image: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f24ccb62dd39667e1757a.png",
+      stats: "Bắt đầu đạt 3M views"
     },
     { 
       id: 4, 
@@ -62,8 +62,8 @@ export const TheComeback: React.FC = () => {
       subLabel: "Kỷ lục mới",
       date: "Tháng 3",
       color: "#D4F077", // Primary
-      image: "https://picsum.photos/400/300?random=4",
-      stats: "+200% Tăng trưởng"
+      image: "https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f24cce889d3352f800259.png",
+      stats: "+408% Tăng trưởng"
     }
   ];
 
@@ -81,7 +81,7 @@ export const TheComeback: React.FC = () => {
         <div className="text-center mb-16 md:mb-20">
            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 font-bold text-xs uppercase tracking-widest mb-6 animate-pulse">
               <span className="w-2 h-2 rounded-full bg-green-500"></span>
-              Live Proof
+              Kết quả sau khi làm theo cách mới
            </div>
            <h2 className="text-4xl md:text-6xl font-black uppercase mb-6 leading-tight">
              Sự trở lại <br/>
@@ -283,7 +283,7 @@ export const TheComeback: React.FC = () => {
                     <div className="bg-black/40 p-3 rounded-xl border border-gray-700/50 flex items-center gap-3 animate-slide-in-right opacity-0" style={{animationDelay: '0.2s', animationFillMode: 'forwards'}}>
                         <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs"><i className="ph-fill ph-thumbs-up"></i></div>
                         <div>
-                           <div className="text-xs font-bold text-white">+15.2K lượt thích</div>
+                           <div className="text-xs font-bold text-white">+1.2K lượt thích</div>
                            <div className="text-[10px] text-gray-500">24 giờ qua</div>
                         </div>
                     </div>
@@ -291,7 +291,7 @@ export const TheComeback: React.FC = () => {
                     <div className="bg-black/40 p-3 rounded-xl border border-gray-700/50 flex items-center gap-3 animate-slide-in-right opacity-0" style={{animationDelay: '0.8s', animationFillMode: 'forwards'}}>
                         <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white text-xs"><i className="ph-fill ph-share-network"></i></div>
                         <div>
-                           <div className="text-xs font-bold text-white">342 Chia sẻ mới</div>
+                           <div className="text-xs font-bold text-white">11.4K lượt chia sẻ mới</div>
                            <div className="text-[10px] text-gray-500">Nội dung Viral</div>
                         </div>
                     </div>
@@ -299,8 +299,8 @@ export const TheComeback: React.FC = () => {
                     <div className="bg-black/40 p-3 rounded-xl border border-gray-700/50 flex items-center gap-3 animate-slide-in-right opacity-0" style={{animationDelay: '1.4s', animationFillMode: 'forwards'}}>
                         <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs"><i className="ph-fill ph-trend-up"></i></div>
                         <div>
-                           <div className="text-xs font-bold text-white">Top Xu Hướng</div>
-                           <div className="text-[10px] text-gray-500">Đang thịnh hành</div>
+                           <div className="text-xs font-bold text-white">Nội Dung Lên Xu Hướng</div>
+                           <div className="text-[10px] text-gray-500">Và được đề xuất liên tục</div>
                         </div>
                     </div>
                  </div>

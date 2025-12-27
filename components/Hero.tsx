@@ -1,6 +1,18 @@
+
 import React from 'react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onCTA?: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onCTA }) => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full min-h-screen bg-black overflow-hidden flex flex-col items-center justify-center pt-10 pb-20">
       
@@ -41,27 +53,27 @@ export const Hero: React.FC = () => {
            </div>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-6">
           <span className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs md:text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(212,240,119,0.3)]">
-            Hệ Thống Thu Nhập Mạng Xã Hội
+            Social Income System
           </span>
         </div>
         
-        <div className="flex flex-col items-center gap-0 mb-12 select-none relative">
-          <h1 className="text-[12rem] md:text-[18rem] font-black tracking-tight leading-[0.85] text-transparent bg-clip-text bg-gradient-to-b from-white/40 to-white/5 drop-shadow-none pt-4">
+        <div className="flex flex-col items-center gap-0 mb-10 select-none relative">
+          <h1 className="text-[12rem] md:text-[18rem] font-black tracking-tighter leading-[0.75] text-transparent bg-clip-text bg-gradient-to-b from-white/40 to-white/5 drop-shadow-none">
              33
           </h1>
 
-          <div className="relative -mt-6 md:-mt-10 z-10 flex flex-col items-center">
-              <h2 className="text-4xl md:text-7xl font-black tracking-normal uppercase text-white drop-shadow-[0_4px_4px_rgba(0,0,0,1)] filter leading-[1.15] py-2">
+          <div className="relative -mt-6 md:-mt-12 z-10 flex flex-col items-center">
+              <h2 className="text-4xl md:text-8xl font-black tracking-tighter uppercase text-white drop-shadow-[0_4px_10px_rgba(0,0,0,1)] filter leading-[1] py-0">
                  NGÀY ĐỒNG HÀNH
               </h2>
-              <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 mt-4">
-                 <h3 className="text-4xl md:text-6xl font-extrabold tracking-normal uppercase text-primary drop-shadow-[0_0_25px_rgba(212,240,119,0.4)] leading-[1.2] py-1">
+              <div className="flex flex-col md:flex-row items-center gap-0 md:gap-4 mt-1 md:mt-2">
+                 <h3 className="text-4xl md:text-7xl font-black tracking-tighter uppercase text-primary drop-shadow-[0_0_25px_rgba(212,240,119,0.4)] leading-[1] py-0">
                     Xây Kênh
                  </h3>
-                 <span className="hidden md:block text-4xl text-gray-600">&</span>
-                 <h3 className="text-4xl md:text-6xl font-extrabold tracking-normal uppercase text-green-400 drop-shadow-[0_0_25px_rgba(74,222,128,0.4)] leading-[1.2] py-1">
+                 <span className="hidden md:block text-4xl text-gray-500 font-black mx-1">&</span>
+                 <h3 className="text-4xl md:text-7xl font-black tracking-tighter uppercase text-green-400 drop-shadow-[0_0_25px_rgba(74,222,128,0.4)] leading-[1] py-0">
                     Thương Hiệu
                  </h3>
               </div>
@@ -69,17 +81,23 @@ export const Hero: React.FC = () => {
         </div>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed mb-12 text-gray-300">
-          Chúng tôi soi sáng con đường từ <span className="text-white font-bold">Con số 0</span> đến <span className="text-primary font-bold">Thành thạo</span>. 
-          Biến mạng xã hội thành tài sản sinh lời thực sự.
+          Hướng dẫn đồng hành <span className="text-white font-bold">từng bước một</span> để <span className="text-primary font-bold">xây kênh & thương hiệu cá nhân trên Facebook</span>. 
+          Bí mật tạo thu nhập đáng kinh ngạc trên Facebook mà không cần quay video hay lộ mặt nếu bạn không muốn.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto relative z-20">
-          <button className="relative group flex items-center justify-center gap-3 font-bold text-lg px-10 py-5 rounded-full bg-primary text-black shadow-[0_0_30px_rgba(212,240,119,0.5)] hover:shadow-[0_0_50px_rgba(212,240,119,0.8)] hover:scale-105 transition-all duration-300">
+          <button 
+            onClick={onCTA}
+            className="relative group flex items-center justify-center gap-3 font-bold text-lg px-10 py-5 rounded-full bg-primary text-black shadow-[0_0_30px_rgba(212,240,119,0.5)] hover:shadow-[0_0_50px_rgba(212,240,119,0.8)] hover:scale-105 transition-all duration-300"
+          >
             <span>Đăng Ký Ngay</span>
             <i className="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
           </button>
           
-          <button className="flex items-center justify-center gap-3 font-bold text-lg px-10 py-5 rounded-full border border-gray-700 text-gray-300 hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300">
+          <button 
+            onClick={() => scrollTo('reveal')}
+            className="flex items-center justify-center gap-3 font-bold text-lg px-10 py-5 rounded-full border border-gray-700 text-gray-300 hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300"
+          >
             <span>Tìm Hiểu Thêm</span>
           </button>
         </div>

@@ -20,7 +20,7 @@ export const NewRules: React.FC = () => {
             ĐỪNG TỰ TRÁCH MÌNH
           </h2>
           <h3 className="text-5xl md:text-8xl font-black text-white uppercase tracking-normal leading-[1.15] pt-4 py-2 glitch-text">
-            LUẬT CHƠI <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-500">ĐÃ ĐỔI</span>
+            LUẬT CHƠI <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-500">ĐÃ KHÁC</span>
           </h3>
         </div>
         
@@ -54,7 +54,7 @@ export const NewRules: React.FC = () => {
             </div>
             
             <div className="mt-6 text-xs text-gray-600 font-mono text-center">
-               // Hệ thống xác nhận: Đây không phải nguyên nhân thất bại.
+               // Đây không phải nguyên nhân thất bại.
             </div>
           </div>
           
@@ -81,7 +81,7 @@ export const NewRules: React.FC = () => {
             </div>
 
              <div className="mt-6 text-xs text-primary/60 font-mono text-center animate-pulse">
-               // Hệ thống xác nhận: Cần cập nhật ngay lập tức.
+               // Cần cập nhật kỹ năng xây kênh ngay lập tức.
             </div>
           </div>
         </div>

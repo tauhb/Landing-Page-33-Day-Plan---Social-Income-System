@@ -15,15 +15,15 @@ export const Instructor: React.FC = () => {
 
             <div className="relative z-10 aspect-[3/4] rounded-sm overflow-hidden border border-white/10 bg-[#111]">
                <img 
-                 src="https://picsum.photos/600/800?random=1" 
-                 alt="Hoàng Bá Tàu"
+                 src="https://storage.googleapis.com/msgsndr/nWwodtlNPVJ0Y1l4tpNb/media/694f2c34b62dd3722be1d63c.png" 
+                 alt="Hoàng Bá Tầu"
                  className="w-full h-full object-cover transition-all duration-700 ease-out grayscale group-hover:grayscale-0 group-hover:scale-105"
                />
                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/20 to-transparent h-[20%] w-full -translate-y-full animate-radar-scan pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end mix-blend-difference z-20 pointer-events-none">
                   <div className="flex flex-col">
-                     <span className="text-[10px] font-mono tracking-widest uppercase text-white">Định danh</span>
-                     <span className="text-xl font-bold font-mono tracking-tighter text-white">HBT_KIẾN_TRÚC_SƯ</span>
+                     <span className="text-[10px] font-mono tracking-widest uppercase text-white">Người đồng hành</span>
+                     <span className="text-xl font-bold font-mono tracking-tighter text-white">HOÀNG_BÁ_TẦU</span>
                   </div>
                   <i className="ph-fill ph-qr-code text-2xl text-white opacity-80"></i>
                </div>
@@ -37,11 +37,11 @@ export const Instructor: React.FC = () => {
                   <div className="w-12 h-px bg-primary"></div>
                   <span className="text-primary font-mono text-sm tracking-[0.2em] uppercase">Người hướng dẫn</span>
                </div>
-               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600 leading-[0.9] mb-6">
-                 Hoàng Bá Tàu
+               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600 leading-[1.4] mb-6">
+                 Hoàng Bá Tầu
                </h2>
                <p className="text-xl md:text-2xl text-gray-400 font-light">
-                 Kiến trúc sư của <span className="text-white font-bold">Hệ Thống Thu Nhập Mạng Xã Hội</span>
+                 Người xây dựng <span className="text-white font-bold">Social Income System</span>
                </p>
             </div>
 
@@ -51,8 +51,8 @@ export const Instructor: React.FC = () => {
                      <i className="ph-fill ph-hourglass-high text-xl"></i>
                      <span className="text-xs font-bold uppercase tracking-wider">Kinh nghiệm</span>
                   </div>
-                  <div className="text-3xl font-bold text-white">7+ Năm</div>
-                  <div className="text-xs text-gray-500 mt-1">Thực chiến xây hệ thống</div>
+                  <div className="text-3xl font-bold text-white">9+ Năm</div>
+                  <div className="text-xs text-gray-500 mt-1">Thực chiến xây hệ thống marketing</div>
                </div>
 
                <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors group/card">
@@ -69,17 +69,17 @@ export const Instructor: React.FC = () => {
                      <i className="ph-fill ph-users text-xl"></i>
                      <span className="text-xs font-bold uppercase tracking-wider">Tầm ảnh hưởng</span>
                   </div>
-                  <div className="text-3xl font-bold text-white">1000+</div>
-                  <div className="text-xs text-gray-500 mt-1">Học viên thành công</div>
+                  <div className="text-3xl font-bold text-white">1500+</div>
+                  <div className="text-xs text-gray-500 mt-1">Zoom chia sẻ miễn phí</div>
                </div>
             </div>
 
             <div className="space-y-8">
                <div className="border-l-2 border-primary/30 pl-6">
                   <p className="text-gray-400 leading-relaxed text-lg">
-                    Tôi không phải là một "Guru" dạy làm giàu. Tôi là một <span className="text-white font-bold">người thực hành (Practitioner)</span>.
+                    Tôi không phải là một "Guru" dạy làm giàu. Tôi là một <span className="text-white font-bold">người thực hành.</span>.
                     <br/><br/>
-                    Những gì tôi chia sẻ không đến từ sách vở lý thuyết, mà đến từ hàng nghìn giờ thử sai, đốt tiền vào quảng cáo, và những lần xây đi đập lại các hệ thống kinh doanh.
+                    Những gì tôi chia sẻ không đến từ sách vở lý thuyết, mà đến từ hàng nghìn giờ thử sai, đốt tiền vào quảng cáo, và những lần xây lại các hệ thống kinh doanh.
                   </p>
                </div>
 
@@ -92,7 +92,7 @@ export const Instructor: React.FC = () => {
             </div>
 
             <div className="mt-12 flex items-center gap-4 group/sig w-fit">
-               <div className="text-sm font-mono text-gray-500 uppercase tracking-widest">Ký tên bởi</div>
+               <div className="text-sm font-mono text-gray-500 uppercase tracking-widest">Hoàng Bá Tầu</div>
                <div className="w-48 h-16 relative">
                   <svg viewBox="0 0 200 80" className="w-full h-full stroke-white fill-none stroke-2" style={{strokeLinecap: 'round', strokeLinejoin: 'round'}}>
                      <path 
